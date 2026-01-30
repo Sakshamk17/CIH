@@ -2,7 +2,12 @@
 
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from "recharts";
 
-export default function PriorityBarChart({ data }: { data: any[] }) {
+import type { PriorityStats } from '@/lib/types';
+export default function PriorityBarChart({ 
+  data 
+}: { 
+  data: PriorityStats[] 
+}) {
   return (
     <ResponsiveContainer width="100%" height={220}>
       <BarChart data={data}>
